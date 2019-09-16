@@ -1,14 +1,13 @@
 ## Django Polls Application
- 
 
-Assignment : Learn Django by Implementing the Tutorial App
 
+Assignment: Learn Django by Implementing the Tutorial App
 - Made a polls app using python with Django.
-
 
 by Arisa Pangpeng 6110545678
 
 ## Requirements
+
 
  The application requires
  * Python 3.6 or newer
@@ -16,19 +15,19 @@ by Arisa Pangpeng 6110545678
  * Python add-on modules as in [requirements.txt](requirements.txt)
 
 ## Running
-
-** **You must cloning the Django app** as a zip file and extract file or clone the repository to your local machine with Terminal :
+** **You must cloning the Django app** as a zip file and extract the file or clone the repository to your local machine with Terminal :
 ```
 git clone https://github.com/kidstylex/django-polls.git
 ```
-1.  Open Terminal and change current directory to Django directory and go to `\mysite`
+1. Open Terminal and change current directory to Django directory and go to `\mysite`
 ```
 C:\Users\..\..>cd django-polls\mysite
 ```
-2. Typing `py manage.py runserver` on Terminal
-and you'll get message like this :
+
+2. Typing `py manage.py runserver` on Terminal and you'll get a message like this :
+
 ```
-C:\Users\..\..\ django-polls\mysite>py manage.py runserver
+C:\Users\..\..\django-polls\mysite>py manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
@@ -38,11 +37,8 @@ Django version 2.2.5, using settings 'mysite.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
-
 3. You'll see web server when you go to http://localhost:8000
-* admin page : http://localhost:8000/admin
-* to vote a polls : http://localhost:8000/polls
-
-
+- admin page: http://localhost:8000/admin
+- to vote polls: http://localhost:8000/polls
 
 
