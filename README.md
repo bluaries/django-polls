@@ -14,11 +14,29 @@ by Arisa Pangpeng 6110545678
  * Django 2.1.2 or newer
  * Python add-on modules as in [requirements.txt](requirements.txt)
 
-## How to run
-** **You must cloning the Django app** as a zip file and extract the file or clone the repository to your local machine with Terminal :
+## Installing
+**You must cloning the Django app** as a zip file and extract the file or clone the repository to your local machine with Terminal :
 ```
 git clone https://github.com/kidstylex/django-polls.git
 ```
+Create `.env` text file in \django-polls and **file must contain** : 'SECRET_KEY, DEBUG, ALLOWED_HOSTS, DB_ENGINE and DB_NAME'
+
+**EXAMPLE**
+```
+# You can generate SECRET_KEY using : https://djecrety.ir/
+
+SECRET_KEY = 'YOUR_SECRET_KEY'
+
+DEBUG = True/False
+
+ALLOWED_HOSTS = .localhost
+
+DB_ENGINE = 'django.db.backends.sqlite3'
+
+DB_NAME = 'db.sqlite3'
+```
+
+## How to run
 1. Open Terminal and change current directory to django-polls directory :
 ```
 C:\Users\..\..>cd django-polls
