@@ -14,20 +14,20 @@ by Arisa Pangpeng 6110545678
  * Django 2.1.2 or newer
  * Python add-on modules as in [requirements.txt](requirements.txt)
 
-## Running
+## How to run
 ** **You must cloning the Django app** as a zip file and extract the file or clone the repository to your local machine with Terminal :
 ```
 git clone https://github.com/kidstylex/django-polls.git
 ```
-1. Open Terminal and change current directory to Django directory and go to `\mysite`
+1. Open Terminal and change current directory to django-polls directory :
 ```
-C:\Users\..\..>cd django-polls\mysite
+C:\Users\..\..>cd django-polls
 ```
 
 2. Typing `py manage.py runserver` on Terminal and you'll get a message like this :
 
 ```
-C:\Users\..\..\django-polls\mysite>py manage.py runserver
+C:\Users\..\..\django-polls>py manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
