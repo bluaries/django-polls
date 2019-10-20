@@ -18,7 +18,22 @@ by Arisa Pangpeng 6110545678
 **You must cloning the Django app** as a zip file and extract the file or clone the repository to your local machine with Terminal :
 ```
 git clone https://github.com/kidstylex/django-polls.git
+
 ```
+
+Install required packages :
+```
+pip install -r requirements.txt 
+```
+Create database using :
+```
+py manage.py migrate
+```
+If you want to create admin user :
+```
+py manage.py createsuperuser
+```
+
 Create `.env` text file in \django-polls and **file must contain** : 'SECRET_KEY, DEBUG, ALLOWED_HOSTS, DB_ENGINE and DB_NAME'
 
 **EXAMPLE**
