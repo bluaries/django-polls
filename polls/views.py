@@ -4,9 +4,10 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Choice, Question
 
-logger = logging.getLogger()
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
@@ -36,8 +37,17 @@ class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
 
+
+class EyesOnlyView(LoginRequiredMixin, generic.ListView):
+    # this is the default. Same default as in auth_required decorator
+    login_url = '/accounts/login/'
+
+@login_required
 def vote(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
+    """Vote for one of the answers to a question."""
+    user = request.user
+    print("current user is", user.id, "login", user.username)
+    print("Real name:", user.first_name, user.last_name)
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
