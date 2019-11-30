@@ -42,9 +42,10 @@ class EyesOnlyView(LoginRequiredMixin, generic.ListView):
     # this is the default. Same default as in auth_required decorator
     login_url = '/accounts/login/'
 
-@login_required
+@login_required 
 def vote(request, question_id):
     """Vote for one of the answers to a question."""
+    question = get_object_or_404(Question, pk=question_id)
     user = request.user
     print("current user is", user.id, "login", user.username)
     print("Real name:", user.first_name, user.last_name)
